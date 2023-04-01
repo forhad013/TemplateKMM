@@ -1,0 +1,20 @@
+CREATE TABLE Product (
+    id INTEGER NOT NULL PRIMARY KEY,
+    title TEXT NOT NULL,
+    price REAL NOT NULL,
+    description TEXT NOT NULL,
+    category TEXT NOT NULL,
+    rate REAL NOT NULL,
+    count REAL NOT NULL
+);
+
+
+insertMovielist:
+INSERT OR REPLACE INTO Product(id, title, price, description, category, rate, count)
+VALUES(?, ?, ?, ?, ?, ?, ?);
+
+removeMovielist:
+DELETE FROM Product;
+
+getMovielist:
+SELECT *FROM Product;

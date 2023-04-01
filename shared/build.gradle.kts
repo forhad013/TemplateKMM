@@ -24,10 +24,6 @@ kotlin {
         }
     }
 
-    val coroutinesVersion = "1.6.4"
-    val ktorVersion = "2.2.1"
-    val sqlDelightVersion = "1.5.5"
-    val dateTimeVersion = "0.4.0"
 
     sourceSets {
         val commonMain by getting {
@@ -55,7 +51,6 @@ kotlin {
         val iosArm64Main by getting
         val iosSimulatorArm64Main by getting
         val iosMain by creating {
-
             dependencies {
                 implementation(AppDependencies.IOS_KTOR_CLIENT)
                 implementation(AppDependencies.IOS_SQL_DELIGHT_DRIVE)
@@ -83,5 +78,12 @@ android {
     defaultConfig {
         minSdk = AppConfig.minSdk
         targetSdk = AppConfig.targetSdk
+    }
+}
+
+sqldelight {
+    database(AppConfig.SQLDELIGHT_DB_NAME) {
+        packageName = AppConfig.SQLDELIGHT_DB_PACKAGE_NAME
+        sourceFolders = listOf(AppConfig.SQLDELIGHT_DB_SOURCESET)
     }
 }
