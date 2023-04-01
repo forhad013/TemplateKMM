@@ -7,4 +7,8 @@ object AppConfig {
 
     const val APPLICATION_ID = "com.example.templatekmm"
     const val ANDROID_NAMESPACE = "com.example.templatekmm.android"
+
+    const val SQLDELIGHT_DB_NAME = "StoreDatabase"
+    const val SQLDELIGHT_DB_PACKAGE_NAME = "com.example.templatekmm.database"
+    const val SQLDELIGHT_DB_SOURCESET = "sqldelight"
 }
