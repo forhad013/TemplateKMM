@@ -11,10 +11,12 @@ object AppDependencies {
     const val KTOR_CLIENT_CORE =  "io.ktor:ktor-client-core:${BuildDependencyVersions.KTOR_VERSION}"
     const val KTOR_CLIENT = "io.ktor:ktor-client-content-negotiation:${BuildDependencyVersions.KTOR_VERSION}"
     const val KTOR_SERIALIZATION = "io.ktor:ktor-serialization-kotlinx-json:${BuildDependencyVersions.KTOR_VERSION}"
+    const val KTOR_LOGGING = "io.ktor:ktor-client-logging:${BuildDependencyVersions.KTOR_VERSION}"
 
 
     //Android specific
     const val ANDROID_KTOR_CLIENT = "io.ktor:ktor-client-android:${BuildDependencyVersions.KTOR_VERSION}"
+    const val ANDROID_KTOR_CLIENT_OKHTTP = "io.ktor:ktor-client-okhttp:${BuildDependencyVersions.KTOR_VERSION}"
     const val ANDROID_SQL_DELIGHT_DRIVE = "com.squareup.sqldelight:android-driver:${BuildDependencyVersions.SQL_DELIGHT_VERSION}"
 
     //iOS specific
@@ -24,5 +26,9 @@ object AppDependencies {
     //
     const val KOTLIN_COROUTINS_CORE = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${BuildDependencyVersions.COROUTINES_VERSION}"
     const val SQL_DELIGHT_RUNTIME = "com.squareup.sqldelight:runtime:${BuildDependencyVersions.SQL_DELIGHT_VERSION}"
+
+    //others
+    const val KOTLIN_SERIALIZE = "org.jetbrains.kotlinx:kotlinx-serialization-core:${BuildDependencyVersions.SERIALIZE_VERSION}"
+
 
 }
