@@ -33,6 +33,8 @@ kotlin {
                 implementation(AppDependencies.KTOR_CLIENT)
                 implementation(AppDependencies.KTOR_SERIALIZATION)
                 implementation(AppDependencies.SQL_DELIGHT_RUNTIME)
+                implementation(AppDependencies.KTOR_LOGGING)
+                implementation(AppDependencies.KOTLIN_SERIALIZE)
             }
         }
         val commonTest by getting {
@@ -44,6 +46,7 @@ kotlin {
             dependencies {
                 implementation(AppDependencies.ANDROID_KTOR_CLIENT)
                 implementation(AppDependencies.ANDROID_SQL_DELIGHT_DRIVE)
+                implementation(AppDependencies.ANDROID_KTOR_CLIENT_OKHTTP)
             }
         }
         val androidUnitTest by getting
