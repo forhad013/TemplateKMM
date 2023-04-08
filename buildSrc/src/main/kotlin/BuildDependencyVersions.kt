@@ -6,9 +6,11 @@ object BuildDependencyVersions {
     const val KOTLIN_COMPILER_EXTENSION_VERSION = "1.4.0"
     const val KOTLIN_PLUGIN_SERIALIZATION_VERSION = "1.8.10"
 
-
-   const val COROUTINES_VERSION = "1.6.4"
-   const val KTOR_VERSION = "2.2.1"
-   const val SQL_DELIGHT_VERSION = "1.5.5"
+    const val COROUTINES_VERSION = "1.6.4"
+    const val KTOR_VERSION = "2.2.1"
+    const val SQL_DELIGHT_VERSION = "1.5.5"
     const val SERIALIZE_VERSION = "1.4.1"
+
+    const val KOIN_VERSION = "3.3.3"
+
 }

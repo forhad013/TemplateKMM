@@ -13,7 +13,6 @@ object AppDependencies {
     const val KTOR_SERIALIZATION = "io.ktor:ktor-serialization-kotlinx-json:${BuildDependencyVersions.KTOR_VERSION}"
     const val KTOR_LOGGING = "io.ktor:ktor-client-logging:${BuildDependencyVersions.KTOR_VERSION}"
 
-
     //Android specific
     const val ANDROID_KTOR_CLIENT = "io.ktor:ktor-client-android:${BuildDependencyVersions.KTOR_VERSION}"
     const val ANDROID_KTOR_CLIENT_OKHTTP = "io.ktor:ktor-client-okhttp:${BuildDependencyVersions.KTOR_VERSION}"
@@ -29,6 +28,10 @@ object AppDependencies {
 
     //others
     const val KOTLIN_SERIALIZE = "org.jetbrains.kotlinx:kotlinx-serialization-core:${BuildDependencyVersions.SERIALIZE_VERSION}"
+
+    // KOIN
+    const val ANDROID_KOIN = "io.insert-koin:koin-android:${BuildDependencyVersions.KOIN_VERSION}"
+    const val CORE_KOIN = "io.insert-koin:koin-core:${BuildDependencyVersions.KOIN_VERSION}"
 
 
 }
