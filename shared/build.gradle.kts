@@ -20,7 +20,7 @@ kotlin {
         iosSimulatorArm64()
     ).forEach {
         it.binaries.framework {
-            baseName = BuildModules.SHARED_MODULE
+            baseName = "shared"
         }
     }
 
@@ -35,6 +35,7 @@ kotlin {
                 implementation(AppDependencies.SQL_DELIGHT_RUNTIME)
                 implementation(AppDependencies.KTOR_LOGGING)
                 implementation(AppDependencies.KOTLIN_SERIALIZE)
+                implementation(AppDependencies.CORE_KOIN)
             }
         }
         val commonTest by getting {

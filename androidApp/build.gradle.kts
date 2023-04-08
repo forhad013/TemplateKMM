@@ -40,5 +40,6 @@ android {
 
 dependencies {
     implementation(project(BuildModules.SHARED_MODULE))
+    implementation(AppDependencies.ANDROID_KOIN)
     addDependenciesForCompose()
 }
